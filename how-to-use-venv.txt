@@ -1,0 +1,45 @@
+# Create a new venv in your project folder
+python3 -m venv name_of_venv    # typically just 'venv'
+
+# Activate the venv
+source venv/bin/activate        # You'll see (venv) in your prompt
+
+# Deactivate (leave) the venv
+deactivate                      # The (venv) will disappear
+
+# Go to project directory
+cd ~/Desktop/pychat
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate
+
+# Install project packages
+pip install pymongo bcrypt
+
+# List installed packages
+pip list
+
+# Save requirements for others
+pip freeze > requirements.txt
+
+# Make new project directory
+mkdir ~/Desktop/new_project
+cd ~/Desktop/new_project
+
+# Create new venv
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate
+
+# Install packages for new project
+pip install whatever_you_need
+
+# Create requirements file
+pip freeze > requirements.txt
+
+# Others can install everything with
+pip install -r requirements.txt
